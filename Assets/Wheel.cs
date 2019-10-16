@@ -63,8 +63,6 @@ public class Wheel : MonoBehaviour
 		{
 			return;
 		}
-		var localVelocity = myTransform.InverseTransformDirection(mainBody.velocity);
-
 		mainBody.AddForceAtPosition(myTransform.TransformDirection(0, 0, force), myTransform.position);
 	}
 }
